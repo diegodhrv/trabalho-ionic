@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar> <ion-title>Lista Fotos</ion-title> </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let item of lista">
+    <ion-card-content>
+      <p>{{ item.author }}</p>
+    </ion-card-content>
+    <img src="{{ item.foto }}" />
+  </ion-card>
+</ion-content>
